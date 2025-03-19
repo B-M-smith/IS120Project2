@@ -1,0 +1,320 @@
+/* Basics  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+body {
+	color: #333;
+	line-height: 1.6;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+	list-style-type: square; 
+  }
+  .btn{
+	display: inline-block;
+	background-color: #Fce794;
+	color: #373737;
+	padding: 0.75rem 1.5rem;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+  }
+  .card-button-layout-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+/* Tooltip text */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	color: #274954;
+	padding: 2rem;
+}
+.tooltip-2 {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	color: #Fce794;
+	padding: 2rem;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 100%;
+	margin-left: -60px; 
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.tooltip-2 .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 100%;
+	margin-left: -60px; 
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+.tooltip-2:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* header */
+header {
+    position: sticky;
+    top: 0; 
+    z-index: 10; 
+}
+
+.container-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+    background-color: #274954;
+	
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #Fce794;
+}
+
+.together {
+	height: 500px;
+	color: white;
+	display: flex;
+	text-align: center;
+	position: relative;
+}
+
+.together .together-background-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+
+.together p {
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
+}
+
+/* Plan Section */
+
+.cards-container{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap:nowrap;
+ width: 100%;
+}
+
+.Plan-cards {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: nowrap;
+  
+}
+
+.card {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 100%;
+    min-width: 75%;
+    height: 97%;
+}
+
+.card-image {
+	height: 200px;
+	background-color: #ddd;
+}
+
+.card-image img {
+	width:100%;
+	height: 100%;
+}
+
+.card-content{
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.card-title {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	
+}
+.card-location {
+	display: block;
+	font-size: .875rem;
+	margin-top: .5rem;
+}
+.card-button-layout {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+.card-button-layout-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.card-button-layout button.btn {
+	transition: all 0.3s ease;
+}
+.card-button-layout button.btn:hover {
+	transform: scale(1.05);
+	background-color: #373737;
+    color: #ddd;
+	box-shadow: #aaa 0 0 10px;
+}
+.card-button-layout-2 button.btn:hover {
+	transform: scale(1.05);
+	background-color: #373737;
+    color: #ddd;
+	box-shadow: #aaa 0 0 10px;
+}
+@media (min-width: 768px) {
+		.card {
+			flex: 0 1 calc(33.333% - 2rem);
+		}
+	}
+
+/* table */
+.pricing-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.pricing-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+.pricing-table th {
+    background-color: #274954;
+    color: #Fce794;
+    padding: 12px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.pricing-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+.pricing-table tr:hover {
+    background-color: #f1f1f1;
+}
+.pricing-table td:last-child {
+    font-weight: bold;
+    color: #373737;
+}
+.pricing-table .disclaimer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+}
+
+/* footer */
+
+footer {
+	background-color: #373737;
+    color: white;
+    padding: 2rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+	display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-bottom {
+	border-top: 1px solid #555;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #aaa;
+    width: 100%;
+}
+.footer-section {
+	display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start; 
+    width: 100%;
+    max-width: 1200px;
+}
+

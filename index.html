@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@338&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+        <!-- Favicon links -->
+        <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2210%22%20width%3D%2211.25%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M384%2064c0%2D17.7%2014.3%2D32%2032%2D32l128%200c17.7%200%2032%2014.3%2032%2032s%2D14.3%2032%2D32%2032l%2D96%200%200%2096c0%2017.7%2D14.3%2032%2D32%2032l%2D96%200%200%2096c0%2017.7%2D14.3%2032%2D32%2032l%2D96%200%200%2096c0%2017.7%2D14.3%2032%2D32%2032L32%20480c%2D17.7%200%2D32%2D14.3%2D32%2D32s14.3%2D32%2032%2D32l96%200%200%2D96c0%2D17.7%2014.3%2D32%2032%2D32l96%200%200%2D96c0%2D17.7%2014.3%2D32%2032%2D32l96%200%200%2D96z%22%2F%3E%3C%2Fsvg%3E" type="image/svg+xml">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    
+        <title>Nook N Steps</title>
+</head>
+<body class="bg-stone-100">
+
+    
+    <header>
+        <nav>
+            <div class="container-nav-container">
+                <div class="logo">
+                    <span>Nook N Steps</span>
+                </div>
+            </div>
+            
+      
+    
+        <!-- Dropdown Menu with SVG Icon -->
+        <div class="relative group">
+            <!-- SVG Icon as dropdown button -->
+            <button class="text-white bg-yellow-200 hover:bg-slate-500 p-2 rounded-md flex justify-right">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-6 h-6">
+                    <path d="M40 48C26.7 48 16 58.7 16 72l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24L40 48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L192 64zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l288 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-288 0zM16 232l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-48 0z"/>
+                </svg>
+            </button>
+    
+            <!-- Dropdown content -->
+            <div class="absolute left-0 hidden mt-2 w-full bg-gray-800 text-white rounded-md shadow-lg group-hover:block">
+                <a href="#Home" class="block px-4 py-2">Home</a>
+                <a href="#About-us" class="block px-4 py-2">About US</a>
+                <a href="#testimonials" class="block px-4 py-2">Testimonials</a>
+                <a href="#contact" class="block px-4 py-2">Contact</a>
+                <a href="#Building-blox" class="block px-4 py-2">Building Blox Program</a>
+                <a href="#Empower" class="block px-4 py-2">Empower Program</a>
+                <a href="#Pathfinder" class="block px-4 py-2">Pathfinder Program</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+
+    <!-- Video Section -->
+<div id="top" class="together">
+    <video class="together-background-video" autoplay muted loop>
+        <source src="./7783024-hd_1920_1080_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<!-- tooltips -->
+<div class="tooltip">Hover over me
+    <span class="tooltiptext">look at the breif discription of each type of prgram and click learn more to be able to get new information</span>
+</div>
+<!-- Three Plans Section -->
+<section class="Plans">
+    <h2 class="text-4xl text-green-950 justify-center flex px-2 py-3">What Plan fits your Child the best?</h2>
+    <p class="text-Sm text-green-950 justify-center flex px-3 py-2">Discover a plan that will help your child the best. We are here to help you, and your child.</p>
+    <br>
+
+    <div class="cards-container">    
+        <div class="Plan-cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="marisa-howenstine-Cq9slNxV8YU-unsplash.jpg" alt="Kids playing with Blox">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Building Blocks</h3>
+                    <p>This is meant for 1st graders to 3rd graders with the hopes we can help them while they are still in the development stage.</p>
+                    <div class="card-button-layout">
+                        <button onclick="location.href='#Building-blox'" class="btn"> Learn more</button>
+                    </div>
+                    <div class="card-button-layout-2" onclick="location.href='#price-table'" ><button class="btn">Prices</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Plan-cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./santi-vedri-O5EMzfdxedg-unsplash.jpg" alt="Child working on homework">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Empower</h3>
+                    <p>This is meant for 4th to 8th graders who need additional help with their Dyslexia.</p>
+                    <div class="card-button-layout"><button  onclick="location.href='#Empower'"   class="btn">Learn more</button></div>
+                    <div onclick="location.href='#price-table'"  class="card-button-layout-2"><button class="btn">Prices</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Plan-cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt="Friends studying at a table">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Pathfinder</h3>
+                    <p>This program is for students above 8th grade or those who have completed the other two tracks.</p>
+                    <div class="card-button-layout"><button class="btn" onclick="location.href='#Pathfinder'">Learn more</button></div>
+                    <div onclick="location.href='#price-table'"  class="card-button-layout-2"><button class="btn">Prices</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="Plan-cards">
+            <div class="card">
+                <div class="card-image">
+                    <img src="./sigmund-OV44gxH71DU-unsplash.jpg" alt="Kids creating art">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Power Track</h3>
+                    <p>This program is for if you have multiple kids who need help. Call and you can mix and match! </p>
+                    <div class="card-button-layout"><button class="btn" >Call Today</button></div>
+                    <div onclick="location.href='#price-table'"  class="card-button-layout-2"><button class="btn">Prices</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Article Section -->
+<article class="Learn-then-buy">
+    <div class="container">
+        <div id="Building-blox" class="Building-blox">
+            <h2 class="text-4xl flex justify-center text-center">Building Blox</h2>
+            <br>
+            <div class="flex justify-center items-center m-px">
+                <img class="w-md rounded-md" src="./element5-digital-OyCl7Y4y0Bk-unsplash.jpg" alt="books on a table with blox">
+            </div>
+            <br>
+            <p class="text-md">
+
+                    Building Blox Description
+                    Building Blox: A Strong Foundation for Lifelong Learning
+                    
+                    At Nook N Steps, we understand that early diagnosis of dyslexia or other reading challenges can be overwhelming for both parents and children. That’s why we created Building Blox, a specialized program designed to provide the right tools, guidance, and support for young learners in the critical early stages of their literacy journey.
+                    
+                    The Power of Phonetic Learning
+                    Building Blox is centered around phonetic learning, a research-backed approach proven to be one of the most effective ways to help children develop strong reading skills. By focusing on phonics, we help children decode words, recognize patterns, and build confidence in their ability to read and write. Our program nurtures a child's natural curiosity and equips them with the skills they need to navigate the world of literacy with ease.
+                    
+                    Who Is This Program For?
+                    This program is specifically designed for first through third graders who have recently been diagnosed with dyslexia or are struggling with early literacy skills. At this stage of development, children are highly receptive to structured learning approaches, making it the perfect time to introduce phonetic strategies that will set them up for future success. 
+            </p>
+                <ul>
+                    <br>
+                    <li>Phonics-Based Lessons: Engaging, multisensory lessons that help children understand the connection between letters and sounds.</li>
+                    <br>
+                    <li>Guided Reading Sessions: Interactive reading activities to improve fluency and comprehension.</li>
+                    <br>
+                    <li>Hands-on Learning Materials: Access to books, worksheets, and phonics games that reinforce concepts in a fun and memorable way.</li>
+                    <br>
+                    <li>Bi-Weekly Check-Ins: Our educators provide regular check-ins to monitor progress, offer personalized feedback, and adjust learning plans as needed.</li>
+                    <br>
+                    <li>Parental Support & Resources: Resources and guidance for parents to reinforce learning at home.</li>
+                </ul>
+                <br>
+                <h1> Choose Building Blox?</h1>
+                <br>
+                <p>
+                Our program is built on the belief that every child deserves a strong start in their literacy journey. Here’s why Building Blox stands out:
+                
+                Individualized Support: Each child’s learning journey is unique, which is why our program offers personalized guidance based on their needs.
+                
+                Confidence Boosting Approach: Many children with reading difficulties struggle with self-esteem. By providing structured, step-by-step support, we help them develop confidence in their abilities.
+                
+                Engaging & Interactive Methods: Learning should never feel like a chore! Our program incorporates visual, auditory, and kinesthetic activities to make literacy engaging and accessible.
+                
+                A Safe and Encouraging Environment: We create a space where children feel comfortable, supported, and encouraged to take risks in their learning.
+                
+                Building a Brighter Future
+                With Building Blox, we aim to lay the groundwork for a lifetime of learning success. By nurturing early literacy skills, we not only help children become better readers but also foster a love for learning that extends beyond the classroom.
+                
+                If you are looking for a structured, supportive, and effective program to help your child thrive, Building Blox is here to guide them every step of the way!
+                
+                </p>  
+                <div class="tooltip-1">Hover over me
+                    <span class="tooltiptext">Scroll down to get pricing for this program</span>
+                </div>
+        </div>
+        <br>
+        <div id="Empower" class="Empower">
+            <h2 class="text-4xl flex justify-center text-center">Empower</h2>
+            <br>
+            <div class="flex justify-center items-center m-px">
+                <img class="w-md rounded-md" src="./kelli-mcclintock-Z7uacdEYnd4-unsplash.jpg" alt="books on a table with blox">
+            </div>
+            <br>
+            <p> 
+
+                At Nook N Steps, we recognize that as children grow, their academic challenges evolve. For students in 4th to 8th grade, reading difficulties can become a major obstacle to learning, often leading to frustration and a lack of confidence. The Empower program is designed to address these challenges by strengthening reading skills in a supportive and encouraging environment. Our goal is to help students build resilience, enhance their literacy skills, and regain confidence in their academic journey.
+                
+                A Program Tailored for Growth
+                
+                The Empower program is specifically crafted for upper elementary and middle school students who require additional support in reading. This age group faces unique learning hurdles, such as increased academic demands, more complex reading materials, and growing self-awareness. By offering a structured yet flexible approach, we help students overcome these difficulties and develop a positive relationship with reading.
+            </p>
+            <br>
+            <p>
+                Key Components of the Empower Program:
+            </p>
+            <ul>
+                <li>offers a holistic approach to literacy development by integrating the following elements:</li> 
+                
+                <li>Comprehension Strategies: Teaching students how to analyze and understand texts, improving their ability to retain information. </li>
+                
+                <li>Fluency Training: Developing smoother and more confident reading through guided and independent practice.</li>
+                
+                <li>Vocabulary Expansion: Building a stronger vocabulary foundation to support reading comprehension and writing skills.</li>
+                
+                <li>Learning Plans: Tailoring instruction to fit each student’s needs, strengths, and challenges.</li> 
+                
+                <li>Bi-Weekly Check-Ins: Regular progress assessments to ensure students are advancing at a comfortable and effective pace. </li>
+                
+                <li>Encouraging Mindset Development: Helping students overcome self-doubt and fostering a positive approach to learning.</li>
+            </ul>    
+            <br>
+            <p>
+                Why Choose Empower?
+                
+                Our program is designed not just to improve reading skills but also to reignite a passion for learning. Here’s why Empower is the right choice:
+                
+                Confidence Building: Many struggling readers develop anxiety around academics. Our approach focuses on positive reinforcement to help students see their progress and believe in their abilities.
+                
+                Engaging and Interactive Methods: We incorporate games, discussions, and multimedia resources to make learning more engaging and relatable.
+                
+                Supportive Learning Environment: Every child is different, and we ensure that students feel safe, supported, and motivated throughout their learning journey.
+                
+                Practical Skill Application: Students learn strategies that extend beyond the classroom, helping them succeed in all subjects.
+                
+                A Path to Academic Success
+                
+                With the Empower program, students in 4th to 8th grade can develop the essential reading skills they need to thrive. By providing a structured yet flexible learning experience, we equip them with the tools to read with confidence, comprehend with ease, and embrace learning with enthusiasm.
+                
+                If you are looking for a supportive, skill-focused program that will help your child gain confidence and excel in their literacy journey, Empower is the perfect fit!
+            </p>
+        </div>
+        <br>
+        <div id="Pathfinder" class="Pathfinder">
+            <h2 class="text-4xl flex justify-center text-center">Pathfinder</h2>
+            <br>
+            <div class="flex justify-center items-center m-px">
+                <img class="w-md rounded-md" src="./annie-spratt-gq5PECP8pHE-unsplash.jpg" alt="books on a table with blox">
+            </div>
+            <br>
+            <p>
+                Pathfinder: Building Independence and Academic Skills
+
+                At Nook N Steps, we understand that as students transition into high school and beyond, they require the tools and confidence to take charge of their education. Pathfinder is designed for older students who have either completed our earlier programs or need a structured approach to enhancing their academic skills. Our program fosters independence, self-advocacy, and critical thinking, ensuring that students are well-prepared for their future academic and personal endeavors.
+                
+                Preparing for the Future
+                
+                The Pathfinder program supports students who are ready to take a more active role in their education. Whether they are in high school or preparing for higher education, we equip them with the necessary skills to manage their learning, improve comprehension, and develop essential study habits. By focusing on self-reliance and problem-solving, students gain the confidence to tackle more complex academic challenges.
+            </p>
+             <br>
+               <p> 
+                    Key Components of the Pathfinder Program 
+
+               </p>
+            <ul>
+               <li> Pathfinder provides a comprehensive approach to academic success through the following key elements:</li>
+                
+               <li> Advanced Reading Comprehension: Teaching students to analyze texts critically, synthesize information, and apply it to their studies. </li>
+                
+               <li> Strategic Study Skills: Developing effective note-taking techniques, time management strategies, and organizational skills.</li>
+                
+               <li> Independent Learning Techniques: Encouraging students to set goals, track progress, and take ownership of their education.</li>
+                
+               <li> Critical Thinking Development: Enhancing problem-solving abilities and fostering analytical skills to prepare for higher education and career pathways.</li>
+                
+               <li> Bi-Weekly Check-Ins: Regular progress assessments to help students stay on track and address any challenges they may encounter.</li>
+                
+               <li>Practical Application Exercises: Real-world learning opportunities to reinforce concepts and build confidence.</li>
+            </ul> 
+            <br>
+            <p>
+                Why Choose Pathfinder?
+                
+                Our program focuses on long-term academic success by helping students become independent learners. Here’s why Pathfinder is the ideal choice:
+                
+                Self-Directed Learning: Encouraging students to take responsibility for their education by developing personalized study habits.
+                
+                Confidence and Resilience: Addressing academic challenges head-on and teaching strategies to overcome obstacles.
+                
+                College and Career Readiness: Preparing students for the demands of higher education, technical training, or the workforce.
+                
+                Supportive Environment: Ensuring that students feel motivated, capable, and ready to take on new challenges.
+            
+                A Step Toward Academic Independence
+                
+                With the Pathfinder program, older students gain the skills and confidence needed to navigate their academic and personal lives with independence. By providing a structured, yet adaptable learning experience, we equip them with the tools to thrive in high school, college, and beyond.
+                
+                If you are looking for a program that builds independence, strengthens academic skills, and prepares students for the future, Pathfinder is the perfect fit!
+                
+            </p>
+        </div>
+    </div>
+    <br>
+
+</article>
+<br>
+
+<!-- Pricing Table  -->
+<section id="price-table" class="pricing-table">
+    <table>
+        <tr>
+            <th>Plan</th>
+            <th>Elements</th>
+            <th>Price
+                <svg xmlns="http://www.w3.org/2000/svg" height="15" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#Fce794" d="M160 0c17.7 0 32 14.3 32 32l0 35.7c1.6 .2 3.1 .4 4.7 .7c.4 .1 .7 .1 1.1 .2l48 8.8c17.4 3.2 28.9 19.9 25.7 37.2s-19.9 28.9-37.2 25.7l-47.5-8.7c-31.3-4.6-58.9-1.5-78.3 6.2s-27.2 18.3-29 28.1c-2 10.7-.5 16.7 1.2 20.4c1.8 3.9 5.5 8.3 12.8 13.2c16.3 10.7 41.3 17.7 73.7 26.3l2.9 .8c28.6 7.6 63.6 16.8 89.6 33.8c14.2 9.3 27.6 21.9 35.9 39.5c8.5 17.9 10.3 37.9 6.4 59.2c-6.9 38-33.1 63.4-65.6 76.7c-13.7 5.6-28.6 9.2-44.4 11l0 33.4c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.9c-.4-.1-.9-.1-1.3-.2l-.2 0s0 0 0 0c-24.4-3.8-64.5-14.3-91.5-26.3c-16.1-7.2-23.4-26.1-16.2-42.2s26.1-23.4 42.2-16.2c20.9 9.3 55.3 18.5 75.2 21.6c31.9 4.7 58.2 2 76-5.3c16.9-6.9 24.6-16.9 26.8-28.9c1.9-10.6 .4-16.7-1.3-20.4c-1.9-4-5.6-8.4-13-13.3c-16.4-10.7-41.5-17.7-74-26.3l-2.8-.7s0 0 0 0C119.4 279.3 84.4 270 58.4 253c-14.2-9.3-27.5-22-35.8-39.6c-8.4-17.9-10.1-37.9-6.1-59.2C23.7 116 52.3 91.2 84.8 78.3c13.3-5.3 27.9-8.9 43.2-11L128 32c0-17.7 14.3-32 32-32z"/></svg>
+            </th>
+        </tr>
+        <tr>
+            <td>Building Blox</td>
+            <td>Book, videos, and bi-weekly check-ins</td>
+            <td>$75.00 a semester</td>
+        </tr>
+        <tr>
+            <td>Empower</td>
+            <td>Online course, book, bi-weekly check-ins</td>
+            <td>$80.00 a semester</td>
+        </tr>
+        <tr>
+            <td>Pathfinder</td>
+            <td>Online course, book, assessments, bi-weekly check-ins</td>
+            <td>$65.00 a semester</td>
+        </tr>
+        <tr>
+            <td>Power Track</td>
+            <td>All the sections bought now!</td>
+            <td>$2,000 total</td>
+        </tr>
+    </table>
+    <div class="disclaimer">
+        <h4>Semesters are 12 weeks long. Scholarships are available.</h4>
+    </div>
+</section>
+<br>
+<section>
+<div class="card-button-layout-3" onclick="location.href='#top'" ><button class="btn">Back to top</button></div>
+</section>
+<br>
+ <!-- Footer -->
+    <footer>
+    <div class="flex justify-center items-center rounded-xs text-stone-400 p-6">
+        <form action="#" method="post" class="flex flex-col gap-4 w-full max-w-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5 text-yellow-300 mb-2">
+                <path fill="#Fce794" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+            </svg>
+            <label for="emailInput" class="font-semibold">Email Address:</label>
+            <input type="text" id="emailInput" name="emailInput" placeholder="Type your email..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
+            <label for="firstNameInput" class="font-semibold">First Name:</label>
+            <input type="text" id="firstNameInput" name="firstNameInput" placeholder="Type your first name..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
+            <label for="lastNameInput" class="font-semibold">Last Name:</label>
+            <input type="text" id="lastNameInput" name="lastNameInput" placeholder="Type your last name..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
+            <button type="submit" class="bg-yellow-200 text-stone-400 p-3 rounded-xs hover:bg-yellow-200 transition">Get Newsletters</button>    
+        </form>
+        <div class="tooltip-2 ml-6">
+            Hover over me
+            <span class="tooltiptext">Add your email so you can get new info</span>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-6">
+        <div class="flex justify-center items-center rounded-xs text-stone-400">
+            <form action="#" method="post" class="flex flex-col gap-4 w-full max-w-sm">
+                <label for="commentFirstName" class="font-semibold"> Name:</label>
+                <input type="text" id="commentFirstName" name="commentFirstName" placeholder="Type your first name..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
+                <label for="commentInput" class="font-semibold">Comment:</label>
+                <input type="text" id="commentInput" name="commentInput" placeholder="Type your comment..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
+                <button type="submit" class="bg-yellow-200 text-stone-400 p-3 rounded-xs hover:bg-yellow-200 transition">Leave a Comment</button>    
+            </form>
+        </div>
+
+        <div class="footer-bottom mt-6 flex justify-between text-stone-400 text-sm">
+            <p>© 2025 Nook N Steps. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:underline">Privacy Policy</a>
+                <a href="#" class="hover:underline">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+<!-- AI usage:
+ I used it to help format my table to make it with CSS styling. I also used chat to help find any missing semicolons. I asked "why is my css not showing up? and it showed I was missing two semicolons"
+
+Getting the buttons to actually scroll to locations. I asked chat how to do that. the question I asked was "how do you get the button to go to another part of the page" and it gave me an A tag opition on an on click button with the button tag. 
+
+I asked chat what a "tooltip was and how to make one work" I took that and wrote made my own HTML and used the coded it gave for the css and changed it so it fit my page.
+
+Used it for figuring out the right layout to right the favicon. I was not sure how to impliment this and it only shows up on google chrome not safari. 
+
+I asked it to help create the discriptions for the different programs that I am "selling" as my product
+
+I asked chat how to best style a table, I knew hot to make it but did not know hot to style. It gave a bunch of options and I used it to create what is on my css.
+-->
