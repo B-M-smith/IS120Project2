@@ -353,4 +353,47 @@ footer {
     }
 }
 
-    
+/* Scale Animation */
+@keyframes scaleEffect {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Apply scaling effect on hover */
+.btn:hover {
+    animation: scaleEffect 0.3s ease-in-out;
+    background-color: #373737;
+    color: #ddd;
+    box-shadow: #aaa 0 0 10px;
+}
+  
+  /* Define the keyframe animation */
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Apply the animation to .card-title */
+.why-choose {
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    animation: wiggle 1s 2;
+}
