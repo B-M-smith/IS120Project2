@@ -14,7 +14,7 @@
         <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2210%22%20width%3D%2211.25%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M384%2064c0%2D17.7%2014.3%2D32%2032%2D32l128%200c17.7%200%2032%2014.3%2032%2032s%2D14.3%2032%2D32%2032l%2D96%200%200%2096c0%2017.7%2D14.3%2032%2D32%2032l%2D96%200%200%2096c0%2017.7%2D14.3%2032%2D32%2032l%2D96%200%200%2096c0%2017.7%2D14.3%2032%2D32%2032L32%20480c%2D17.7%200%2D32%2D14.3%2D32%2D32s14.3%2D32%2032%2D32l96%200%200%2D96c0%2D17.7%2014.3%2D32%2032%2D32l96%200%200%2D96c0%2D17.7%2014.3%2D32%2032%2D32l96%200%200%2D96z%22%2F%3E%3C%2Fsvg%3E" type="image/svg+xml">
         <link rel="icon" href="./favicon.ico" type="image/x-icon">
     
-        <title>Nook N Steps</title>
+        <title class="nook-N-Steps">Nook N Steps</title>
 </head>
 <body class="bg-stone-100">
 
@@ -348,21 +348,31 @@
 </section>
 <br>
  <!-- Footer -->
-    <footer>
+ <footer>
     <div class="flex justify-center items-center rounded-xs text-stone-400 p-6">
-        <form action="#" method="post" class="flex flex-col gap-4 w-full max-w-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5 text-yellow-300 mb-2">
+        <form action="#" method="post" class="flex flex-col gap-4 w-full max-w-sm" role="form" aria-labelledby="newsletter-form-title">
+            <h2 id="newsletter-form-title" class="sr-only">Newsletter Signup</h2> <!-- Hidden title for screen readers -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5 text-yellow-300 mb-2" aria-hidden="true">
                 <path fill="#Fce794" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
             </svg>
+
             <label for="emailInput" class="font-semibold">Email Address:</label>
-            <input type="text" id="emailInput" name="emailInput" placeholder="Type your email..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
+            <input type="email" id="emailInput" name="emailInput" placeholder="Type your email..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required aria-describedby="email-error">
+            <span id="email-error" class="sr-only">Please enter a valid email address</span> <!-- Error message for screen readers -->
+
             <label for="firstNameInput" class="font-semibold">First Name:</label>
-            <input type="text" id="firstNameInput" name="firstNameInput" placeholder="Type your first name..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
+            <input type="text" id="firstNameInput" name="firstNameInput" placeholder="Type your first name..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required aria-describedby="first-name-error">
+            <span id="first-name-error" class="sr-only">Please enter your first name</span>
+
             <label for="lastNameInput" class="font-semibold">Last Name:</label>
-            <input type="text" id="lastNameInput" name="lastNameInput" placeholder="Type your last name..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
-            <button type="submit" class="bg-yellow-200 text-stone-400 p-3 rounded-xs hover:bg-yellow-200 transition">Get Newsletters</button>    
+            <input type="text" id="lastNameInput" name="lastNameInput" placeholder="Type your last name..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required aria-describedby="last-name-error">
+            <span id="last-name-error" class="sr-only">Please enter your last name</span>
+
+            <button type="submit" class="bg-yellow-200 text-stone-400 p-3 rounded-xs hover:bg-yellow-200 transition" aria-label="Submit newsletter subscription">Get Newsletters</button>    
         </form>
-        <div class="tooltip-2 ml-6">
+
+        <div class="tooltip-2 ml-6" role="tooltip" aria-live="polite">
             Hover over me
             <span class="tooltiptext">Add your email so you can get new info</span>
         </div>
@@ -370,24 +380,31 @@
 
     <div class="container mx-auto p-6">
         <div class="flex justify-center items-center rounded-xs text-stone-400">
-            <form action="#" method="post" class="flex flex-col gap-4 w-full max-w-sm">
-                <label for="commentFirstName" class="font-semibold"> Name:</label>
-                <input type="text" id="commentFirstName" name="commentFirstName" placeholder="Type your first name..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
+            <form action="#" method="post" class="flex flex-col gap-4 w-full max-w-sm" role="form" aria-labelledby="comment-form-title">
+                <h2 id="comment-form-title" class="sr-only">Leave a Comment</h2>
+
+                <label for="commentFirstName" class="font-semibold">Name:</label>
+                <input type="text" id="commentFirstName" name="commentFirstName" placeholder="Type your first name..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required aria-describedby="comment-first-name-error">
+                <span id="comment-first-name-error" class="sr-only">Please enter your first name</span>
+
                 <label for="commentInput" class="font-semibold">Comment:</label>
-                <input type="text" id="commentInput" name="commentInput" placeholder="Type your comment..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required>
-                <button type="submit" class="bg-yellow-200 text-stone-400 p-3 rounded-xs hover:bg-yellow-200 transition">Leave a Comment</button>    
+                <input type="text" id="commentInput" name="commentInput" placeholder="Type your comment..." class="p-3 rounded-xs border border-yellow-200 focus:outline-none focus:ring-2 focus:ring-yellow-200" required aria-describedby="comment-error">
+                <span id="comment-error" class="sr-only">Please enter your comment</span>
+
+                <button type="submit" class="bg-yellow-200 text-stone-400 p-3 rounded-xs hover:bg-yellow-200 transition" aria-label="Submit your comment">Leave a Comment</button>    
             </form>
         </div>
 
         <div class="footer-bottom mt-6 flex justify-between text-stone-400 text-sm">
             <p>© 2025 Nook N Steps. All rights reserved.</p>
             <div class="flex gap-4">
-                <a href="#" class="hover:underline">Privacy Policy</a>
-                <a href="#" class="hover:underline">Terms of Service</a>
+                <a href="#" class="hover:underline" aria-label="Privacy Policy">Privacy Policy</a>
+                <a href="#" class="hover:underline" aria-label="Terms of Service">Terms of Service</a>
             </div>
         </div>
     </div>
 </footer>
+
 </body>
 </html>
 

@@ -19,6 +19,7 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -192,12 +193,32 @@ header {
 	border-radius: 5%;
 }
 
+/* Define the animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
-.card-content{
-	padding: 1.5em;
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
+/* Apply the animation to .card-content */
+.card-content {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    animation: bounce 1s 2;
 }
 
 .card-title {
@@ -243,6 +264,7 @@ header {
 			flex: 0 1 calc(33.333% - 2rem);
 		}
 	}
+
 
 /* table */
 .pricing-table {
@@ -324,3 +346,11 @@ footer {
     max-width: 1200px;
 }
 
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce){
+    .element {
+        animation: none;
+    }
+}
+
+    
