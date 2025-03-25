@@ -1,9 +1,11 @@
 /* Basics  */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
 .container {
 	width: 90%;
 	max-width: 1200px;
@@ -12,13 +14,25 @@
 }
 
 body {
-	color: #333;
-	line-height: 1.6;
+    color: #333;
+    line-height: 1.6;
     font-family: "Oswald", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body.adaptive {
+      background: black;
+      color: whitesmoke;
+    }
+  
+    .adaptive {
+      background: black;
+      color: white;
+    }
+  }
 
 html {
     scroll-behavior: smooth;
