@@ -22,15 +22,81 @@ body {
     font-style: normal;
   }
   
+
   @media (prefers-color-scheme: dark) {
+    /* Dark mode for the body when adaptive class is added */
     body.adaptive {
       background: black;
       color: whitesmoke;
     }
-  
+
+    /* Dark mode for other elements when adaptive class is added */
     .adaptive {
       background: black;
-      color: white;
+      color: whitesmoke;
+    }
+  }
+/* Basic styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Hamburger button style */
+  .hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+  
+  .hamburger .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide the nav links by default */
+      width: 100%;
+      text-align: center;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 1rem 0;
+    }
+  
+    .nav-links.active {
+      display: block; /* Show the nav links when 'active' class is added */
+    }
+  
+    .hamburger {
+      display: flex; /* Show the hamburger button on mobile */
     }
   }
 
@@ -165,8 +231,8 @@ header {
 /* Plan Section */
 .cards-container {
     display: grid;
-    grid-template-columns: 2fr; 
-    gap: 1rem; 
+    grid-template-columns: 2fr;
+    gap: 1rem;
     padding: 1rem;
 }
 
